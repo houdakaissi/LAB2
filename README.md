@@ -29,8 +29,9 @@ torch.nn contains neural network related functionalities.
 torch.optim contains optimization algorithms, with Adam being one of the most commonly used optimizers.
 CrossEntropyLoss is a loss function often used for multi-class classification tasks.
 DataLoader is used to load data batches during training.ToTensor is a torchvision transform that converts PIL images or NumPy arrays to PyTorch tensors. MNIST is a dataset containing hand-written digits, commonly used for training and testing machine learning models.
-step2:t prepares the model for training on the MNIST dataset,with GPU with 128 samples in each batch  Initializes the Adam optimizer,nitializes the cross-entropy loss function  train the model in loops and show loss and epoch and test test loss and accuracy 
-
+step2:t prepares the model for training on the MNIST dataset,with GPU with 128 samples in each batch  Initializes the Adam optimizer,nitializes the cross-entropy loss function  train the model in loops and show loss and epoch and test test loss and accuracy
+sytep3:pytroch provides autograd : facilitating the training of neural network models through backpropagation. 
+----> the sequence of operations typically involves initial feature extraction followed by subsequent transformation through the transformer encoder, which consists of several layers omprising layer normalization, multi-head self-attention, and multi-layer perceptron layers, orchestrates the transformation of image representation
 3. Model Comparison
 Interpreted the results obtained from the ViT model and compared them with the results from the CNN and Faster R-CNN models.
 
