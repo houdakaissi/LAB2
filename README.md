@@ -32,7 +32,9 @@ DataLoader is used to load data batches during training.ToTensor is a torchvisio
 step2:t prepares the model for training on the MNIST dataset,with GPU with 128 samples in each batch  Initializes the Adam optimizer,nitializes the cross-entropy loss function  train the model in loops and show loss and epoch and test test loss and accuracy
 sytep3:pytroch provides autograd : facilitating the training of neural network models through backpropagation. 
 ----> the sequence of operations typically involves initial feature extraction :flattening and embedding followed by subsequent transformation through the transformer encoder, which consists of several layers omprising layer normalization, multi-head self-attention, and multi-layer perceptron layers, orchestrates the transformation of image representation
-   step4:The transformer encod er was developed with sequence data in mind, an image is not a sequenc so we do We modify our MyViT class to implement the patchifying only**
+   step4:The transformer encod er was developed with sequence data in mind, an image is not a sequenc so we do We modify our MyViT class to implement the patchifying only
+   etp!:each image will be divided into 49 patches, each patch covering an area of 4x4 pixels
+   Adding the classification token
 
 
 
