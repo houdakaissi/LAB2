@@ -35,7 +35,8 @@ sytep3:pytroch provides autograd : facilitating the training of neural network m
    step4:The transformer encod er was developed with sequence data in mind, an image is not a sequenc so we do We modify our MyViT class to implement the patchifying only
    etp!:each image will be divided into 49 patches, each patch covering an area of 4x4 pixels
    Adding the classification token
-
+Step 2: Adding the classification token we e add to our model that has the role of capturing information about the other tokens.
+Step 3: Positional encoding ositional encoding allows the model to understand where each patch would be placed in the original image n each sequence, for token i we add to its j-th coordinate  
 
 
 3. Model Comparison
