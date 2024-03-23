@@ -1,14 +1,16 @@
 # Deep Learning Lab Report
 #Objective    
 The main objective of this lab is to gain familiarity with the PyTorch library and build various neural architectures for computer vision tasks. Specifically, we aim to implement CNN, Faster R-CNN, and Vision Transformer (ViT) models for classifying the MNIST dataset.
+
 Part 1: CNN Classifier
- 
-<img width="82" alt="Capture d'écran 2024-03-20 170202" src="https://github.com/houdakaissi/LAB2/assets/95725016/99352a87-a004-43f0-9d37-030985c053a3">
+
+ DataSet MNIST Dataset : https://www.kaggle.com/datasets/hojjatk/mnist-dataset 
 1. CNN Architecture
 Implemented a CNN architecture using PyTorch to classify the MNIST dataset.
 Defined convolutional, pooling, and fully connected layers.
 Specified hyperparameters such as kernels, padding, stride, and optimizers.
 Ran the model in GPU mode for improved performance.
+
 2. Faster R-CNN
 Implemented the Faster R-CNN architecture for MNIST dataset classification.
 3. Model Comparison
@@ -20,7 +22,7 @@ Part 2: Vision Transformer (ViT)
 
 
 
-2. ViT Architecture
+Part 2. ViT Architecture
    
 This tutorial provides a comprehensive guide to implementing the Vision Transformer (VIT) model for image classification tasks, specifically using the MNIST dataset. MNIST is a well-known dataset consisting of hand-written digits ranging from 0 to 9, each represented by grayscale images with a resolution of 28x28 pixels. 
 STEPS:
