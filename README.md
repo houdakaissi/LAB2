@@ -6,16 +6,23 @@ Part 1: CNN Classifier
 
  DataSet MNIST Dataset : https://www.kaggle.com/datasets/hojjatk/mnist-dataset 
 1. CNN Architecture
-Implemented a CNN architecture using PyTorch to classify the MNIST dataset.
-Defined convolutional, pooling, and fully connected layers.
-Specified hyperparameters such as kernels, padding, stride, and optimizers.
-Ran the model in GPU mode for improved performance.
+we import the required libraries:
+-e define a custom CNN class inheriting from nn.Module. We define the layers of the CNN in the constructor (__init__)
+-we set hyperparameters such as batch size, learning rate, and number of epochs. We also define a transformation to apply to the input data, which includes converting images to tensors and normalizing their pixel values.
+-we load the MNIST dataset
+-we check if GPU is available and move the model to GPU if possible
+-we iterate through the dataset for a certain number of epochs. In each epoch, we iterate through batches of data, perform forward pass, compute the loss, perform backward pass (compute gradients), and update the model parameters using the optimizer.
+- evaluate the trained model on the test set
+-Finally, we print the accuracy of the model on the test set.
 
-2. Faster R-CNN
+
+
+
+3. Faster R-CNN
 Implemented the Faster R-CNN architecture for MNIST dataset classification.
-3. Model Comparison
+4. Model Comparison
 Compared the performance of the CNN and Faster R-CNN models using metrics such as accuracy, F1 score, loss, and training time.
-4. Fine-tuning with VGG16 and AlexNet
+5. Fine-tuning with VGG16 and AlexNet
 Retrained pre-trained models (VGG16 and AlexNet) on the MNIST dataset.
 Compared the performance of fine-tuned models with CNN and Faster R-CNN.
 Part 2: Vision Transformer (ViT)
