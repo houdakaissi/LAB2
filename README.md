@@ -18,13 +18,14 @@ we import the required libraries:
 
 
 
-3. Faster R-CNN
+2. Faster R-CNN
 Implemented the Faster R-CNN architecture for MNIST dataset classification.
-4. Model Comparison
+3. Model Comparison
 Compared the performance of the CNN and Faster R-CNN models using metrics such as accuracy, F1 score, loss, and training time.
-5. Fine-tuning with VGG16 and AlexNet
+4. Fine-tuning with VGG16 and AlexNet
 Retrained pre-trained models (VGG16 and AlexNet) on the MNIST dataset.
 Compared the performance of fine-tuned models with CNN and Faster R-CNN.
+
 Part 2: Vision Transformer (ViT)
 
 
