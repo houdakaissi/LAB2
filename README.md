@@ -37,7 +37,12 @@ sytep3:pytroch provides autograd : facilitating the training of neural network m
    Adding the classification token
 Step 2: Adding the classification token we e add to our model that has the role of capturing information about the other tokens.
 Step 3: Positional encoding ositional encoding allows the model to understand where each patch would be placed in the original image n each sequence, for token i we add to its j-th coordinate  
-Step 4: The encoder block (Part 1/2)The first part of the encoder block applies Layer Normalization:Layer normalization is a technique commonly used in neural networks to normalize the activations of a layer, and Multi-head Self Attention:s to allow the model to focus on relevant parts of the input and capture the relationships between them 
+Step 4: The encoder block (Part 1/2)The first part of the encoder block applies Layer Normalization:Layer normalization is a technique commonly used in neural networks to normalize the activations of a layer, and Multi-head Self Attention:s to allow the model to focus on relevant parts of the input and capture the relationships between them
+step :Now that the encoder block is ready, we just need to insert it in our bigger ViT model which is responsible for patchifying before the transformer blocks,
+Step 6: Classification MLP :Step 6: Classification MLP
+Finally, we can extract just the classification token (first token) out of our N sequences, and use each token to get N classifications. The output of our model is now an (N, 10) tensor
+RESULT: this architecture represents a ViT model for vision tasks, where the input image patches are linearly embedded, processed through transformer blocks, and finally classified using an MLP head
+
 
 3. Model Comparison
 Interpreted the results obtained from the ViT model and compared them with the results from the CNN and Faster R-CNN models.
