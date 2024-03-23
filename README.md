@@ -20,31 +20,49 @@ Part 2: Vision Transformer (ViT)
 
 
 
-1. ViT Architecture
+2. ViT Architecture
+   
 This tutorial provides a comprehensive guide to implementing the Vision Transformer (VIT) model for image classification tasks, specifically using the MNIST dataset. MNIST is a well-known dataset consisting of hand-written digits ranging from 0 to 9, each represented by grayscale images with a resolution of 28x28 pixels. 
-steps:
-import:tqdm library is commonly used to monitor the training progress of machine learning models ,numpy,modules from the PyTorch library:
-torch is the main PyTorch module.
-torch.nn contains neural network related functionalities.
-torch.optim contains optimization algorithms, with Adam being one of the most commonly used optimizers.
-CrossEntropyLoss is a loss function often used for multi-class classification tasks.
-DataLoader is used to load data batches during training.ToTensor is a torchvision transform that converts PIL images or NumPy arrays to PyTorch tensors. MNIST is a dataset containing hand-written digits, commonly used for training and testing machine learning models.
-step2:t prepares the model for training on the MNIST dataset,with GPU with 128 samples in each batch  Initializes the Adam optimizer,nitializes the cross-entropy loss function  train the model in loops and show loss and epoch and test test loss and accuracy
-sytep3:pytroch provides autograd : facilitating the training of neural network models through backpropagation. 
-----> the sequence of operations typically involves initial feature extraction :flattening and embedding followed by subsequent transformation through the transformer encoder, which consists of several layers omprising layer normalization, multi-head self-attention, and multi-layer perceptron layers, orchestrates the transformation of image representation
-   step4:The transformer encod er was developed with sequence data in mind, an image is not a sequenc so we do We modify our MyViT class to implement the patchifying only
-   etp!:each image will be divided into 49 patches, each patch covering an area of 4x4 pixels
-   Adding the classification token
-Step 2: Adding the classification token we e add to our model that has the role of capturing information about the other tokens.
-Step 3: Positional encoding ositional encoding allows the model to understand where each patch would be placed in the original image n each sequence, for token i we add to its j-th coordinate  
-Step 4: The encoder block (Part 1/2)The first part of the encoder block applies Layer Normalization:Layer normalization is a technique commonly used in neural networks to normalize the activations of a layer, and Multi-head Self Attention:s to allow the model to focus on relevant parts of the input and capture the relationships between them
-step :Now that the encoder block is ready, we just need to insert it in our bigger ViT model which is responsible for patchifying before the transformer blocks,
-Step 6: Classification MLP :Step 6: Classification MLP
-Finally, we can extract just the classification token (first token) out of our N sequences, and use each token to get N classifications. The output of our model is now an (N, 10) tensor
+STEPS:
+tep 1: Preparation
+
+Import the necessary libraries including tqdm for monitoring training progress, numpy, and modules from the PyTorch library. These modules include torch for core functionality, torch.nn for neural network-related tasks, and torch.optim for optimization algorithms like Adam. We'll also utilize CrossEntropyLoss as the loss function for multi-class classification tasks and DataLoader for loading data batches during training. Additionally, ToTensor from torchvision transforms PIL images or NumPy arrays to PyTorch tensors. The MNIST dataset, comprising hand-written digits, will be used for training and testing.
+
+Step 2: Model Initialization and Training
+
+Prepare the model for training on the MNIST dataset with GPU acceleration and a batch size of 128 samples. Initialize the Adam optimizer and the cross-entropy loss function. Train the model iteratively, displaying the loss and epoch progress, and evaluate the test loss and accuracy.
+
+Step 3: Autograd and Backpropagation
+
+Leverage PyTorch's autograd functionality to facilitate neural network training via backpropagation. This involves initial feature extraction, flattening, and embedding, followed by subsequent transformation through the transformer encoder. The encoder consists of several layers, including layer normalization, multi-head self-attention, and multi-layer perceptron layers, orchestrating the transformation of image representations.
+
+Step 4: Patchification
+
+Since the transformer encoder was originally designed for sequence data, it must be modified to handle images. Implement patchification, dividing each image into 49 patches, with each patch covering a 4x4 pixel area.
+
+Step 5: Adding Classification Token
+
+Insert a classification token into the model to capture information about the other tokens.
+
+Step 6: Positional Encoding
+
+Incorporate positional encoding to enable the model to understand the placement of each patch in the original image sequence.
+
+Step 7: Encoder Block (Part 1/2)
+
+The encoder block is constructed, starting with layer normalization to normalize layer activations, followed by multi-head self-attention to allow the model to focus on relevant input parts and capture their relationships.
+
+Step 8: Inserting Encoder Block
+
+Insert the encoder block into the ViT model responsible for patchification before the transformer blocks.
+
+Step 9: Classification MLP
+
+Extract the classification token from each sequence and utilize it for classification, resulting in N classifications per token. The model's output is now an (N, 10) tensor
 RESULT: this architecture represents a ViT model for vision tasks, where the input image patches are linearly embedded, processed through transformer blocks, and finally classified using an MLP head
 <img width="393" alt="1" src="https://github.com/houdakaissi/LAB2/assets/95725016/aef402e3-de39-4e4e-bb0c-fe14df90e7bf">
 
-3. Model Comparison
+2. Model Comparison
 Interpreted the results obtained from the ViT model and compared them with the results from the CNN and Faster R-CNN models.
 
 
