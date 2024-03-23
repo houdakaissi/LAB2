@@ -14,7 +14,8 @@ we import the required libraries:
 -we iterate through the dataset for a certain number of epochs. In each epoch, we iterate through batches of data, perform forward pass, compute the loss, perform backward pass (compute gradients), and update the model parameters using the optimizer.
 - evaluate the trained model on the test set
 -Finally, we print the accuracy of the model on the test set.
-
+<img width="131" alt="2" src="https://github.com/houdakaissi/LAB2/assets/95725016/ca7b6d89-d324-46e9-b6fc-da79a0c8594c">
+With Accuracy of the network on the 10000 test images: 99 %
 
 
 
