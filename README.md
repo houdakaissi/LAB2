@@ -42,7 +42,7 @@ step :Now that the encoder block is ready, we just need to insert it in our bigg
 Step 6: Classification MLP :Step 6: Classification MLP
 Finally, we can extract just the classification token (first token) out of our N sequences, and use each token to get N classifications. The output of our model is now an (N, 10) tensor
 RESULT: this architecture represents a ViT model for vision tasks, where the input image patches are linearly embedded, processed through transformer blocks, and finally classified using an MLP head
-
+<img width="393" alt="1" src="https://github.com/houdakaissi/LAB2/assets/95725016/aef402e3-de39-4e4e-bb0c-fe14df90e7bf">
 
 3. Model Comparison
 Interpreted the results obtained from the ViT model and compared them with the results from the CNN and Faster R-CNN models.
