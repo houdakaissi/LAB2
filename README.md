@@ -1,11 +1,11 @@
 # Deep Learning Lab Report
-#Objective    
+**Objective**    
 The main objective of this lab is to gain familiarity with the PyTorch library and build various neural architectures for computer vision tasks. Specifically, we aim to implement CNN, Faster R-CNN, and Vision Transformer (ViT) models for classifying the MNIST dataset.
 
-Part 1: CNN Classifier
+### Part 1: CNN Classifier
 
  DataSet MNIST Dataset : https://www.kaggle.com/datasets/hojjatk/mnist-dataset 
-1. CNN Architecture
+#### 1. CNN Architecture
 we import the required libraries:
 -e define a custom CNN class inheriting from nn.Module. We define the layers of the CNN in the constructor (__init__)
 -we set hyperparameters such as batch size, learning rate, and number of epochs. We also define a transformation to apply to the input data, which includes converting images to tensors and normalizing their pixel values.
@@ -20,12 +20,12 @@ With Accuracy of the network on the 10000 test images: 99 %
 
 
 
-2. Faster R-CNN
+#### 2. Faster R-CNN
 Implemented the Faster R-CNN architecture for MNIST dataset classification.
 
 This project implements the Faster R-CNN (Region-based Convolutional Neural Network) architecture for classifying digits in the MNIST dataset. Faster R-CNN is a state-of-the-art object detection framework that combines a Region Proposal Network (RPN) with a classifier network.
 
-3. Model Comparison
+#### 3. Model Comparison
 Compared the performance of the CNN and Faster R-CNN models using metrics such as accuracy, F1 score, loss, and training time.
 
 Accuracy:  Faster R-CNN model achieved slightly lower accuracy compared to CNN
@@ -33,7 +33,7 @@ The F1 score CNN model had better overall performance
 Loss:he CNN model consistently exhibited lower loss values compared to the Faster R-CNN model
 Training Time::CNN model was significantly shorter compared to the Faster R-CNN model
 
-4. Fine-tuning with VGG16 and AlexNet
+#### 4. Fine-tuning with VGG16 and AlexNet
 Retrained pre-trained models (VGG16 and AlexNet) on the MNIST dataset.
 Compared the performance of fine-tuned models with CNN and Faster R-CNN.
 
@@ -43,8 +43,8 @@ Part 2: Vision Transformer (ViT)
 
 
 
-Part 2. ViT Architecture
-   
+### Part 2. ViT Architecture1
+#### 1.
 This tutorial provides a comprehensive guide to implementing the Vision Transformer (VIT) model for image classification tasks, specifically using the MNIST dataset. MNIST is a well-known dataset consisting of hand-written digits ranging from 0 to 9, each represented by grayscale images with a resolution of 28x28 pixels. 
 STEPS:
 tep 1: Preparation
@@ -85,10 +85,10 @@ Extract the classification token from each sequence and utilize it for classific
 RESULT:  
 <img width="287" alt="20" src="https://github.com/houdakaissi/LAB2/assets/95725016/608d880d-9b7c-427b-9751-093b4fe1ca3e">
 
-2. Model Comparison
+#### 2. Model Comparison
 Interpreted the results obtained from the ViT model and compared them with the results from the CNN and Faster R-CNN models.
 
-Conclution 
+## Conclution 
 In this lab, we delved into the realm of computer vision by exploring various neural architectures, We started with Convolutional Neural Networks (CNNs) for image classification using the MNIST dataset. Then, we delved into object detection with Faster R-CNN, followed by implementing Vision Transformers (ViTs) for image classification. Through experimentation and analysis, we gained insights into model design, optimization, and the evolving landscape of computer vision methodologies. 
 
 
