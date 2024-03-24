@@ -23,12 +23,21 @@ With Accuracy of the network on the 10000 test images: 99 %
 2. Faster R-CNN
 Implemented the Faster R-CNN architecture for MNIST dataset classification.
 
+This project implements the Faster R-CNN (Region-based Convolutional Neural Network) architecture for classifying digits in the MNIST dataset. Faster R-CNN is a state-of-the-art object detection framework that combines a Region Proposal Network (RPN) with a classifier network.
 
-4. Model Comparison
+3. Model Comparison
 Compared the performance of the CNN and Faster R-CNN models using metrics such as accuracy, F1 score, loss, and training time.
-5. Fine-tuning with VGG16 and AlexNet
+
+Accuracy:  Faster R-CNN model achieved slightly lower accuracy compared to CNN
+The F1 score CNN model had better overall performance
+Loss:he CNN model consistently exhibited lower loss values compared to the Faster R-CNN model
+Training Time::CNN model was significantly shorter compared to the Faster R-CNN model
+
+4. Fine-tuning with VGG16 and AlexNet
 Retrained pre-trained models (VGG16 and AlexNet) on the MNIST dataset.
 Compared the performance of fine-tuned models with CNN and Faster R-CNN.
+
+fine-tuning pre-trained VGG16 and AlexNet models for digit classification on the MNIST dataset offers a viable and effective approach, yielding competitive results compared to CNN and Faster R-CNN architectures. However, the choice between fine-tuning and training from scratch should be made based on factors such as available computational resources, dataset characteristics, and specific task requirements.
 
 Part 2: Vision Transformer (ViT)
 
