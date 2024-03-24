@@ -74,7 +74,7 @@ Step 9: Classification MLP
 
 Extract the classification token from each sequence and utilize it for classification, resulting in N classifications per token. The model's output is now an (N, 10) tensor
 RESULT:  
-
+<img width="287" alt="20" src="https://github.com/houdakaissi/LAB2/assets/95725016/608d880d-9b7c-427b-9751-093b4fe1ca3e">
 
 2. Model Comparison
 Interpreted the results obtained from the ViT model and compared them with the results from the CNN and Faster R-CNN models.
