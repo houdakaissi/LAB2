@@ -88,6 +88,7 @@ RESULT:
 2. Model Comparison
 Interpreted the results obtained from the ViT model and compared them with the results from the CNN and Faster R-CNN models.
 
-
+Conclution 
+In this lab, we delved into the realm of computer vision by exploring various neural architectures, We started with Convolutional Neural Networks (CNNs) for image classification using the MNIST dataset. Then, we delved into object detection with Faster R-CNN, followed by implementing Vision Transformers (ViTs) for image classification. Through experimentation and analysis, we gained insights into model design, optimization, and the evolving landscape of computer vision methodologies. 
 
 
